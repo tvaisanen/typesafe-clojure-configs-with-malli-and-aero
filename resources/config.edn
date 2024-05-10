@@ -1,0 +1,14 @@
+[:map
+
+ [:env {:value :dev}
+  [:and :keyword [:enum :dev :staging :prod]]]
+
+ [:description {:value #env VISUAL}
+  :string]
+
+ [:include-file {:value #include "include-this.edn"}
+  :any]
+
+ [:this-is-set {:value #{:1 :2}}
+  :set]
+ ]
